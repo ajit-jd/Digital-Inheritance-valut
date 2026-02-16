@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <h2>Sign up</h2>
+    <form action="signup-submit" id="subForm" method="post">
+        Name: <input type="text" name="name" id="" required>
+        Age: <input type="number" name="age" id="" placeholder="">
+        Email: <input type="email" name="email" id="" required>
+        Password: <input type="password" name="password" id="password" required>
+        Confirm Password: <input type="password" name="cpassword" id="cpassword">
+
+        <br>
+        <p style="color: red;" id="error_msg"></p>
+        <br>
+        <input type="submit" value="Sign up">
+
+    </form>
+    
+    <script>
+        const cpassword = document.querySelector('#cpassword').value;
+        const password = document.querySelector('#password').value;
+        const error_msg = document.getElementById('error_msg');
+
+        
+
+        document.getElementById('subForm').addEventListener('submit', function(event) {
+            console.log("cpassword "+cpassword)
+            console.log("password   "+password)
+            if(password === cpassword){
+                return 
+            }else{
+            event.preventDefault();
+            error_msg.innerHTML= "Confirm password";
+            // You can add your custom logic or validation here
+            console.log('Form submission prevented!');
+            
+            }
+            
+        });
+
+
+    </script>
+</body>
+</html>
