@@ -1,0 +1,458 @@
+:root {
+  --background-color: #0A0A12;
+  --text-color: #ffffff;
+  --hover-background-color: #1E40af;
+  --secondary-color: #0f0e0e;
+ --heading-font: 'Rubik Wet Paint', cursive;
+ --theme-color:  #2BB3D6;
+
+}
+
+/* Remove default spacing */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+       
+
+      
+    }
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+
+
+
+    
+    }
+
+
+    /* IMPORTANT: give spline-viewer a height */
+    spline-viewer {
+      width: 99.9%;
+      height: 100vh;
+      display: block;
+      z-index: 9999;
+      
+    }
+    .nav {
+     
+      display: flex;
+        justify-content: start;
+        height: 10vh;
+        width: 97vw;
+        gap: 20px;
+         align-items: center;
+         /* border: 2px solid red; */
+         position: fixed;
+         top: 3%;
+         left: 1%;
+         z-index: 9999;
+         border-radius: 50px;
+    }
+      .nav {
+      
+      padding: 32px;
+     
+      background: transparent;
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      color: #fff;
+    }
+  .nav {
+  display: flex;
+  gap: 30px; /* space between links */
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Create underline with ::after */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* adjust space below text */
+  width: 0;
+  height: 2px; /* underline thickness */
+  background-color: var(--theme-color); /* underline color */
+  transition: width 0.3s ease;
+}
+
+/* Animate underline on hover */
+.nav a:hover::after {
+  width: 100%;
+}
+
+/* Optional: change text color on hover */
+.nav a:hover {
+  color: var(--theme-color);
+}
+
+
+    
+    .left-login-btn{
+        /* border: 2px solid blue; */
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 6vh;
+        width: 7vw;
+        border-radius: 50px;
+        position: relative;
+        left: 62vw;
+        background: transparent;
+         backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      
+
+       
+    }
+    .left-login-btn:hover{
+      background-color:var(--theme-color);
+      
+      transition: background-color 0.3s ease;
+      
+    }
+   .left-login-btn a{
+color: white;
+   }
+   .left-login-btn a:hover{
+color: black;
+}
+
+
+   .content-of-home{
+   /* border: 2px solid green; */
+   position: absolute;
+    top:20%;
+    z-index: 100;
+    width: 90vw;
+    left: 0%;
+   
+    height: 0vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        /* pointer-events: none; */
+    }
+
+   .landing-headline{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 67vh;
+    font-weight: 500;
+    left: 2vw;
+font-family: 'Orbitron', sans-serif;
+   font-size: 50px;
+color: white;
+text-transform: uppercase;
+  
+
+
+   }
+   .landing-para{
+     /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 57vh;
+font-family: 'Orbitron', sans-serif;
+
+  text-transform: uppercase;
+color: white;
+    height: 45vh;
+    width: 40vw;
+    line-height: 5vh;
+    font-size: 20px;
+    left: 31.5vw;
+    font-weight: 200;
+   }
+
+.smart-inheritance{
+/* border: 2px solid cyan; */
+}
+
+.for-the-digital-age{
+  /* border: 2px solid green; */
+  position: relative;
+  top: 10vh;
+  left: -41.3vw;
+}
+.inheritance{
+  color: var(--theme-color);
+  text-shadow:
+  0 0 5px #2BB3D6,
+  0 0 2px #2BB3D6,
+  0 0 1px rgba(43, 179, 214, 0.7),
+  0 0 2px rgba(43, 179, 214, 0.4);
+
+}
+.age-color{
+  color: var(--theme-color);
+  text-shadow:
+   0 0 5px #2BB3D6,
+  0 0 2px #2BB3D6,
+  0 0 1px rgba(43, 179, 214, 0.7),
+  0 0 2px rgba(43, 179, 214, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .landing-para-2{
+     /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1vh;
+    height: 10vh;
+    line-height: 8vh;
+    width: 40vw;
+  font-family: 'Orbitron', sans-serif;
+
+color: white;
+   }
+
+
+  .btn-create-vault {
+
+text-transform: uppercase;
+font-family: 'Orbitron', sans-serif;
+  
+  width: 20vw;
+
+
+
+  top: 57.2vh;
+  left: 22vw;
+font-size: 2.4vh;
+  background:transparent;
+  color: white;
+ 
+ letter-spacing: 0.5px;
+border: 1.5px solid var(--theme-color);
+  cursor: pointer;
+padding: 1.2vh;
+border-radius: 3px;
+
+  position: relative;
+  z-index: 200;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+ 
+}
+.btn-create-vault:hover{ 
+  background-color: var(--theme-color); 
+
+   color: black;
+ box-shadow:
+  0 20px 40px rgba(43, 179, 214, 0.25),
+  0 0 70px rgba(43, 179, 214, 0.35);
+
+border: 1.5px solid rgba(43, 179, 214, 0.7);
+
+   }
+
+
+.btn-create-talk{
+  
+ font-family: 'Bungee', cursive;
+  
+  width: 10vw;
+
+display: inline-block;
+  position: relative;
+  top: 50vh;
+  left: 40vw;
+  height: 35vh;   /* or any value you want */
+font-size: 2.4vh;
+  background:transparent;
+  border: 1.5px solid var(--theme-color);
+  color: white;
+  font-weight:0;
+  letter-spacing: 0.5px;
+border-radius: 3px;
+  cursor: pointer;
+  padding: 1vh;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+
+
+}
+
+
+.btn-create-talk:hover{
+  background-color: var(--theme-color); 
+box-shadow:
+  0 20px 40px rgba(43, 179, 214, 0.25),
+  0 0 70px rgba(43, 179, 214, 0.35);
+  
+border: 1.5px solid rgba(43, 179, 214, 0.7);
+
+   color:black; 
+}
+
+.frame-of-display{
+  /* border: 2px solid red; */
+ 
+  position: fixed;
+  top: 0%;
+  left: 0%;
+ width: 100vw;
+  height: 100vh;
+  background-color: rgb(13, 149, 223);
+}
+.hidden{
+  border: 2px solid black;
+  height: 6.2vh;
+  width: 10.8vw;
+  position: absolute;
+  z-index: 999;
+  top: 91.3%;
+  background-color: black;
+  left: 87.6%;
+}
+
+/* 3D Background */
+.spline-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;   /* 👈 Push behind everything */
+}
+
+spline-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.second-page{
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid blue; */
+    background-color: #0A0A12;
+    transform: translateY(100vh);
+    position: absolute;
+  
+ 
+
+   }
+   .secure h1{
+font-family: 'Lora', serif;
+
+font-weight: 400;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+   }
+   .secure{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(4vh);
+   }
+     .secure p{
+font-family: 'Monoton', cursive;
+/* border: 2px solid rgb(0, 51, 255); */
+font-weight:100;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+   }
+
+ .box-of-security {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.box {
+width: clamp(260px, 26.7vw, 340px);
+height: clamp(320px, 35vh, 420px);
+
+
+  padding: 40px 30px;
+  border-radius: 20px;
+  position: relative;
+overflow: hidden;
+
+  /* Glass base */
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  /* Border */
+  border: 1px solid rgba(255,255,255,0.08);
+
+  /* Depth shadow */
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.5),
+    0 0 60px rgba(43,179,214,0.15);
+
+  transition: all 0.4s ease;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 80px rgba(43,179,214,0.35);
+}
+
+.ball {
+  position: absolute; /* not fixed */
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2BB3D6;
+  pointer-events: none;
+}
