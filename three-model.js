@@ -8,6 +8,7 @@ scene.background = new THREE.Color(0x0A0A12); // #0A0A12 (eerie black)
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.set(100, 100, 100);
+const aslam = new THREE.Vector3(0, 0, 0);
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
